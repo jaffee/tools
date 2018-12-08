@@ -7,7 +7,7 @@ import (
 	"math/rand"
 	"os"
 
-	"github.com/pilosa/go-pilosa"
+	pilosa "github.com/pilosa/go-pilosa"
 )
 
 var _ Benchmark = (*ImportBenchmark)(nil)

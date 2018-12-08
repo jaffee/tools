@@ -2,10 +2,22 @@
 
 
 [[projects]]
+  name = "github.com/cespare/xxhash"
+  packages = ["."]
+  revision = "569f7c8abf1f58d9043ab804d364483cb1c853b6"
+  version = "v1.1.0"
+
+[[projects]]
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
   revision = "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
   version = "v1.4.7"
+
+[[projects]]
+  name = "github.com/gogo/protobuf"
+  packages = ["proto"]
+  revision = "636bf0302bc95575d69441b25a2603156ffdddf1"
+  version = "v1.1.1"
 
 [[projects]]
   name = "github.com/golang/protobuf"
@@ -55,19 +67,41 @@
   version = "v1.2.0"
 
 [[projects]]
+  branch = "import-experiments"
   name = "github.com/pilosa/go-pilosa"
   packages = [
     ".",
     "gopilosa_pbuf"
   ]
-  revision = "4e7807f5ad779407936744057cd17332046b6c3c"
-  version = "v1.1.0"
+  revision = "70db8cf8258a4fd6dfe013265ffff28f6117f7cb"
+  source = "github.com/jaffee/go-pilosa"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/pilosa/pilosa"
+  packages = [
+    ".",
+    "internal",
+    "logger",
+    "lru",
+    "pql",
+    "roaring",
+    "stats",
+    "tracing"
+  ]
+  revision = "fef0b26c899763b6ad846eaadeb54cf67997675d"
 
 [[projects]]
   name = "github.com/pkg/errors"
   packages = ["."]
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
+
+[[projects]]
+  name = "github.com/satori/go.uuid"
+  packages = ["."]
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [[projects]]
   name = "github.com/spf13/afero"
@@ -105,8 +139,8 @@
 [[projects]]
   name = "github.com/spf13/viper"
   packages = ["."]
-  revision = "2c12c60302a5a0e62ee102ca9bc996277c2f64f5"
-  version = "v1.2.1"
+  revision = "6d33b5a963d922d182c91e8a1c88d81fd150cfd4"
+  version = "v1.3.1"
 
 [[projects]]
   branch = "master"
@@ -118,7 +152,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "4ed8d59d0b35e1e29334a206d1b3f38b1e5dfb31"
+  revision = "ad97f365e15054527b467150f898ec66d7f81e14"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -142,6 +176,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "19a17d79614269b99a92e611171ca930bfa3744f331b7b43d7f1e51c39ea90df"
+  inputs-digest = "88b98aa24ef50d80e78ade7b237a67904e5c3305fdfe07278d1980c70d39e675"
   solver-name = "gps-cdcl"
   solver-version = 1

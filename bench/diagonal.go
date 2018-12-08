@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/pilosa/go-pilosa"
+	pilosa "github.com/pilosa/go-pilosa"
 )
 
 // DiagonalSetBitsBenchmark sets bits with increasing column id and row id.

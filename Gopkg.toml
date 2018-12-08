@@ -1,0 +1,8 @@
+
+
+[[constraint]]
+  name = "github.com/pilosa/go-pilosa"
+  source = "github.com/jaffee/go-pilosa"
+  branch = "import-experiments"
+
+
