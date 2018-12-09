@@ -49,6 +49,12 @@
   version = "v1.0"
 
 [[projects]]
+  name = "github.com/jaffee/commandeer"
+  packages = ["."]
+  revision = "d0012ff26169b05dca5c14910d9415ae389efb8e"
+  version = "v0.1.0"
+
+[[projects]]
   name = "github.com/magiconair/properties"
   packages = ["."]
   revision = "c2353362d570a7bfa228149c62842019201cfb71"
@@ -176,6 +182,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "88b98aa24ef50d80e78ade7b237a67904e5c3305fdfe07278d1980c70d39e675"
+  inputs-digest = "f5c3d9eb3c9b3d44c1203a52b20a1f38f1da164d6b21721fc12ceed605319717"
   solver-name = "gps-cdcl"
   solver-version = 1
