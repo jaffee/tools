@@ -52,6 +52,7 @@ func (b *ImportRoaringBenchmark) Run(ctx context.Context, client *gopilosa.Clien
 		return result, err
 	}
 
+	start := time.Now()
 	fragmentNodeTimes := make([]time.Duration, b.Concurrency)
 	importTimes := make([]time.Duration, b.Concurrency)
 	eg := errgroup.Group{}
@@ -73,6 +74,8 @@ func (b *ImportRoaringBenchmark) Run(ctx context.Context, client *gopilosa.Clien
 		})
 	}
 	eg.Wait()
+	result.Stats.Total = time.Since(start)
+	result.Extra["total"] = result.Stats.Total.String()
 	result.Extra["import-times"] = fmt.Sprintf("%s", importTimes)
 	result.Extra["fragment-node-times"] = fmt.Sprintf("%s", fragmentNodeTimes)
 	return result, errors.Wrap(err, "importing bitmap")
