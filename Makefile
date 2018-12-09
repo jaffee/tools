@@ -16,7 +16,7 @@ $(GOPATH)/bin:
 dep: $(GOPATH)/bin
 	go get -u github.com/golang/dep/cmd/dep
 
-vendor: Gopkg.toml
+vendor: Gopkg.toml Gopkg.lock
 ifndef DEP
 	make dep
 endif
